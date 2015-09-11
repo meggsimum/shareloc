@@ -1,0 +1,92 @@
+<!--
+/*
+ * Shareloc - the free and open map API
+ *
+ * Copyright (c) 2015 meggsimum, Christian Mayer (http://www.meggsimum.de)
+ * Published under the BSD license.
+ * See https://github.com/meggsimum/shareloc/blob/master/LICENSE for the full
+ * text of the license.
+ */
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- @if NODE_ENV='develop' -->
+    <link rel="stylesheet" href="./lib/ol-3.9.0.css" type="text/css">
+    <link rel="stylesheet" href="./lib/bootstrap.min-3.2.0.css">
+    <link rel="stylesheet" href="./res/css/share.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="./res/css/Shareloc.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='develop' -->
+    <script src="./lib/ol-3.9.0.js" type="text/javascript"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery.min-1.11.1.js"></script>
+    <script src="./lib//bootstrap.min-3.2.0.js"></script>
+    <!-- @endif -->
+
+    <title>Shareloc</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <a id="app-logo" class="" href="./" title="Created with Shareloc by meggsimum - WebGIS and more" target="_blank">
+        <img alt="Shareloc by www.meggsimum.de" src="res/img/shareloc-logo-mini.png">
+    </a>
+
+    <div style="display: none;">
+      <!-- Popup -->
+      <div id="popup" title=""></div>
+    </div>
+
+    <!-- @if NODE_ENV='develop' -->
+    <script src="./src/shareloc.js" type="text/javascript"></script>
+    <script src="./src/permalink.js" type="text/javascript"></script>
+    <script src="./src/layers.js" type="text/javascript"></script>
+    <script src="./src/map-api.js" type="text/javascript"></script>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <script src="./src/Shareloc.min.js" type="text/javascript"></script>
+    <!-- @endif -->
+
+    <script type="text/javascript">
+      // get the URL parameters
+      var pl = new Shareloc.Permalink(window.location),
+          params;
+      if (pl.hasHash()) {
+          hashObj = pl.getHashObject();
+          params = hashObj;
+      } else {
+          params = pl.getParams();
+      }
+
+      // create the Shareloc map API
+      var api = new Shareloc.MapApi();
+      var olMap = api.map(params);
+      var markerFeature;
+      if (params.marker) {
+          markerFeature = api.marker(params.marker);
+      }
+      if(markerFeature && params.popupText) {
+          api.markerPopup(markerFeature, params.popupText);
+      }
+
+      // sizes the map to fullscreen
+      var resizeMap2WinSize = function() {
+          var wh = $(window).height();
+          $('#map').css("height", wh + 'px');
+          olMap.updateSize();
+      }
+      //get optimal size for the map
+      $(document).ready(resizeMap2WinSize);
+      $(window).resize(resizeMap2WinSize);
+    </script>
+  </body>
+</html>

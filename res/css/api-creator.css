@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#app-logo {
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    border: red;
+}
+
+#sidebar {
+    position: absolute;
+    display: block;
+    right: 0.5em;
+    top: 0.5em;
+    width: 310px;
+    height: 200px;
+    z-index: 2000;
+    overflow: : auto;
+    background: white;
+}
+
+#code {
+    font-family: monospace;
+}
+
+.panel-heading.shareloc-header {
+    background-image: url("../img/shareloc-logo-mini.png");
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+.active-btn {
+    background-color: #428bca;
+}
+
+#code {
+    font-family: monospace;
+}
+
+#code .list-group {
+    overflow: hidden;
+    word-wrap: break-word; /* width: 250px; */
+}
+
+#marker-x {
+    padding-top: 10px;
+}
+
+.close-btn {
+    float: right;
+    padding: 5px;
+}
+
+#show-ui {
+    position: absolute;
+    display: none;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 2500;
+}
+
+@media screen and (max-width: 600px) {
+    #show-ui  {
+        display: block;
+    }
+}
+
+#code .list-group {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#marker-x {
+    padding-top: 10px;
+}
+
+.close-x-btn {
+    float: right;
+    margin: 5px;
+}
+
+.title-badge {
+    margin-left: 42px;
+}
+.beta-badge {
+    font-size: smaller;
+}
+.full-width {
+    width: 100%;
+}
+.popover-content {
+     min-width: 150px;
+}
+.popover.top {
+    margin-left: 2px;
+    margin-top: -44px;
+}

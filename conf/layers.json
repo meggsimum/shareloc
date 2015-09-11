@@ -1,0 +1,44 @@
+{
+    "osm.base": {
+        "title": "OpenStreetMap Standard Layer",
+        "desc": "The standard OSM base layer",
+        "type": "OSM",
+        "attribution": "<a href='http://www.terrestris.de/'>OSM and Contributors</a>"
+    },
+    "terrestris.osm-wms": {
+        "title": "terrestris OSM WMS",
+        "desc": "An OSM based WMS with custom style by terrestris GmbH & Co. KG",
+        "type": "TileWMS",
+        "url": "http://ows.terrestris.de/osm/service",
+        "layer": "OSM-WMS",
+        "attribution": "<a href='http://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, Data &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+    },
+    "terrestris.osm-wms-gray": {
+        "title": "terrestris OSM WMS Gray",
+        "desc": "An OSM based WMS with custom black and white style by terrestris GmbH & Co. KG",
+        "type": "TileWMS",
+        "url": "http://ows.terrestris.de/osm-gray/service",
+        "layer": "OSM-WMS",
+        "attribution": "<a href='http://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, Data &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+    },
+    "mapquest.road": {
+        "title": "MapQuest Road Layer",
+        "desc": "The MapQuest roads layer based on OSM data",
+        "type": "Mapquest",
+        "layer": "osm"
+    },
+    "mapquest.aerial": {
+        "title": "MapQuest Aerial Layer",
+        "desc": "The MapQuest aerial layer",
+        "type": "Mapquest",
+        "layer": "sat"
+    },
+    "opentopomap": {
+        "title": "OpenTopoMap",
+        "desc": "The free topographic map based on OSM and SRTM data",
+        "type": "XYZ",
+        "url": "",
+        "layer": "",
+        "attribution": "Kartendaten: &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a>, SRTM | Map design: &copy; <a href='http://opentopomap.org/'>OpenTopoMap</a>"
+    }
+}

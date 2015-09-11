@@ -1,0 +1,165 @@
+<!--
+/*
+ * Shareloc - the free and open map API
+ *
+ * Copyright (c) 2015 meggsimum, Christian Mayer (http://www.meggsimum.de)
+ * Published under the BSD license.
+ * See https://github.com/meggsimum/shareloc/blob/master/LICENSE for the full
+ * text of the license.
+ */
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- @if NODE_ENV='develop' -->
+    <link rel="stylesheet" href="./lib/ol-3.9.0.css" type="text/css">
+    <link rel="stylesheet" href="./lib/bootstrap.min-3.2.0.css">
+    <link rel="stylesheet" href="./res/css/api-creator.css">
+
+    <script src="./lib/ol-3.9.0.js" type="text/javascript"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery.min-1.11.1.js"></script>
+    <script src="./lib//bootstrap.min-3.2.0.js"></script>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="./res/css/Shareloc-creator.css">
+    <!-- @endif -->
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+    <title>Shareloc</title>
+  </head>
+  <body>
+    <div id="map">
+    </div>
+    <a id="app-logo" href="http://www.meggsimum.de/"
+        title="Shareloc by meggsimum - WebGIS and more" target="_blank">
+        <img alt="www.meggsimim.de" src="./res/img/meggsimum.png">
+    </a>
+    <div id="show-ui">
+      <button id="list-btn" type="button" class="btn btn-s btn-primary" title="Show the menu to create your Shareloc link">
+          <span class="glyphicon glyphicon-th-list"></span>
+      </button>
+    </div>
+    <div id="sidebar">
+        <button type="button" class="btn btn-s close-x-btn close-ui" data-dismiss="sidebar" title="Close this menu">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <button type="button" id="geolocation-btn" class="btn btn-s close-x-btn geolocation" title="Show your position on the map">
+            <span class="glyphicon glyphicon-screenshot"></span>
+        </button>
+        <div class="panel panel-primary">
+            <div class="panel-heading primary shareloc-header">
+                <span class="badge title-badge">Shareloc</span>
+            </div>
+        </div>
+
+        <!-- Tab definitions -->
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers</a></li>
+            <li><a href="#marker" class="tool-tab" data-toggle="tab">Location</a></li>
+            <li><a href="#code" class="tool-tab" data-toggle="tab">Share</a></li>
+            <li><a href="#info" class="tool-tab" data-toggle="tab">Info</a></li>
+        </ul>
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="layers">
+                <ul class="list-group"></ul>
+            </div>
+            <div class="tab-pane" id="marker">
+               <ul class="list-group">
+                <li class="list-group-item">
+                    Set a marker by clicking on the map.
+                    <p id="marker-x"></p>
+                    <p id="marker-y"></p>
+                    <textarea id="popuptext" class="form-control" rows="3" placeholder="Add text for your marker here..."></textarea>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-pane" id="code">
+              <ul class="list-group">
+                <li id="embed-pl" class="list-group-item">
+                    <a class="btn btn-default pl-link" href="" target="_blank">
+                        <span class="glyphicon glyphicon-link"></span> Link</a>
+                    <a class="btn btn-default pl-mail" href="" target="_blank">
+                        <span class="glyphicon glyphicon-envelope"></span> Mail</a>
+                </li>
+                <li id="embed-iframe" class="list-group-item"></li>
+              </ul>
+            </div>
+
+            <div class="tab-pane" id="info">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <b>Shareloc</b> is a free map API to share <a href="http://openlayers.org/">OpenLayers 3</a> web maps.
+                  Development and hosting are done by <a href="http://meggsimum.de/">meggsimum</a>.
+                  <br/>
+                  <br/>
+                  Defined by a link it is possible to share slippy maps showing your area of interest with one of
+                  the offered layers.
+                  Optionally you also can hint to a POI by a marker icon for example to show a
+                  meeting point or your favorite bar.
+                  <h4>Credits</h4>
+                  Thanks to all map providers, who grant free access to their maps:
+                  <ul>
+                   <li><a href="http://www.openstreetmap.org/">OpenStreetMap</a></li>
+                   <li><a href="http://terrestris.de/">terrestris</a></li>
+                   <li><a href="http://www.mapquest.com/">MapQuest</a></li>
+                   <li><a href="http://opentopomap.org/">OpenTopoMap</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display: none;">
+      <!-- Popup -->
+      <div id="popup" title="" style="padding-top: -30px;">
+      </div>
+    </div>
+
+    <!-- @if NODE_ENV='develop' -->
+    <script src="src/shareloc.js" type="text/javascript"></script>
+    <script src="src/layers.js" type="text/javascript"></script>
+    <script src="src/map-api.js" type="text/javascript"></script>
+    <script src="src/permalink.js" type="text/javascript"></script>
+    <script src="src/api-creator-app.js" type="text/javascript"></script>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <script src="src/Shareloc-creator.min.js" type="text/javascript"></script>
+    <!-- @endif -->
+
+    <script type="text/javascript">
+      var pl = new Shareloc.Permalink(window.location),
+          params;
+      if (pl.hasHash()) {
+          hashObj = pl.getHashObject();
+          params = hashObj;
+      } else {
+          params = {};
+      }
+
+      var api = new Shareloc.MapApi();
+      var olMap = api.map(params);
+      new Shareloc.ApiCreatorApp(olMap);
+
+      // sizes the map to fullscreen
+      var resizeMap2WinSize = function() {
+          var wh = $(window).height();
+          $('#map').css("height", wh + 'px');
+          olMap.updateSize();
+      }
+      //get optimal size for the map
+      $(document).ready(resizeMap2WinSize);
+      $(window).resize(resizeMap2WinSize);
+    </script>
+  </body>
+</html>
