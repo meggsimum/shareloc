@@ -34,15 +34,23 @@ possibilities Shareloc offers.
 
 With Shareloc it is possible to create your OpenLayers 3 web map without any coding. By a [web application](http://apps.meggsimum.de/shareloc/) you can configure your map view, add a marker to point at a special place and optionally add a text in a bubble to your marker. Afterward you can share your map by a simple link or embed the map in your own website.
 
-### Deploy your own Shareloc instance ###
+### Build and deploy your own Shareloc instance ###
 
 * Clone this repository
-* Grunt needs to be installed on your system (``npm install -g grunt``)
+* npm and grunt need to be installed on your system
 * ``npm install``
 * ``grunt build``
-* Copy the build folder to your webserver
-* Optonally you can edit the layers.json file to add your own layers to Shareloc
+* Copy the ``build`` folder to your webserver
+* Optonally you can edit the ``build/conf/layers.json`` file to add your own layers to Shareloc
 * That's it
+
+### Development ###
+
+* Clone this repository
+* npm and grunt need to be installed on your system
+* ``npm install``
+* ``grunt`` (only once or in case you change the HTML templates under ``tpl/``)
+* Open ``index.html`` or ``share.html`` to see your changes
 
 ### Contributions welcome ###
 Any contribution is warmly welcome:
