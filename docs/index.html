@@ -1,0 +1,698 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> </title>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/custom.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='px2'>
+    <div class='clearfix flex flex-stretch mxn2'>
+      <div class='documentation-sidebar relative top-0 bottom-0 right-0 px2 py2 col-3 sm-show'>
+        <div class='font-smaller fixed col-3 top-0 bottom-0 left-0 overflow-auto black bg-cloudy'>
+          <a href="/" class="h5 button block button-transparent"> </a>
+          <div class='px2'>
+              <a
+                href='#'
+                class='regular block'>
+                <code></code>
+              </a>
+              <a
+                href='#shareloc'
+                class='regular block'>
+                <code>Shareloc</code>
+              </a>
+                <a
+                  href='#shareloc/shareloc-apicreatorapp'
+                  class='px1 regular block'>
+                  <code>.Shareloc.ApiCreatorApp</code>
+                </a>
+                <a
+                  href='#shareloc/shareloc-layers'
+                  class='px1 regular block'>
+                  <code>.Shareloc.Layers</code>
+                </a>
+                <a
+                  href='#shareloc/shareloc-mapapi'
+                  class='px1 regular block'>
+                  <code>.Shareloc.MapApi</code>
+                </a>
+                <a
+                  href='#shareloc/shareloc-permalink'
+                  class='px1 regular block'>
+                  <code>.Shareloc.Permalink</code>
+                </a>
+                <a
+                  href='#shareloc/version'
+                  class='px1 regular block'>
+                  <code>.VERSION</code>
+                </a>
+          </div>
+        </div>
+      </div>
+      <div class='sm-col  col-9  flex flex-column'>
+        <div class='flex-auto full-width'>
+          <div class='px1'>
+<section id=''class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#'>
+      <code>
+        <span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  
+
+
+
+
+
+
+
+
+
+</section>
+<section id='shareloc'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc'>
+      <code>
+        Shareloc<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>The Shareloc object provides a namespace for all elements of Shareloc</p>
+
+
+
+
+
+
+
+      <div class='section-indent'>
+<section id='shareloc/shareloc-apicreatorapp'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-apicreatorapp'>
+      <code>
+        Shareloc.ApiCreatorApp<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Application for the GUI based creation of Shareloc permalinks.</p>
+
+
+
+
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-layers'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-layers'>
+      <code>
+        Shareloc.Layers<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>The class holding the layer configuration object. Also offers functions to
+access the layer objects of Shareloc.</p>
+<p>Loads the JSON configuration stored at conf/layers.json</p>
+
+
+
+
+
+
+
+
+      <div class='section-indent'>
+<section id='shareloc/shareloc-layers/createlayerobject'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-layers/createlayerobject'>
+      <code>
+        createLayerObject<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  
+
+
+
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-layers/getlayerconfig'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-layers/getlayerconfig'>
+      <code>
+        getLayerConfig<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  
+
+
+
+
+
+
+
+
+
+</section>
+      </div>
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-mapapi'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-mapapi'>
+      <code>
+        Shareloc.MapApi<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>This class represents the Shareloc map API.</p>
+<p>It offers functions to create a customized OpenLayers map with a base layer
+by config as well as functions to add a marker and a popup to the map.</p>
+
+
+
+
+
+
+
+
+      <div class='section-indent'>
+<section id='shareloc/shareloc-mapapi/map'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-mapapi/map'>
+      <code>
+        map<span class='gray'>(config)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates an OpenLayers map object by the given configuration object and
+renders it to a DIV with the ID 'map' in the DOM.</p>
+<p>Configuration must be in the format:</p>
+<pre><code>  {
+    X: &quot;8.318049976895958&quot;,
+    Y: &quot;49.43451657605041&quot;,
+    zoom: &quot;14&quot;,
+    bgLayer: &quot;opentopomap&quot;,
+    marker: &quot;49.43707328904662,8.306307792663572&quot;,
+    popupText: &quot;foo-popup-text&quot;
+  }</code></pre>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>config</td>
+            <td>
+              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>
+            </td>
+            <td><p>the configuration object for the map</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+      <h4>Returns</h4>
+      <code><code>ol.Map</code></code>
+      :
+      <span class='force-inline'>
+        <p>the created OpenLayers map</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-mapapi/marker'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-mapapi/marker'>
+      <code>
+        marker<span class='gray'>(markerPosString)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates a marker feature on the map at the given position.</p>
+<p>The position must be a comma separated String containing lat and lon, e. g.
+&quot;49.43707328904662,8.306307792663572&quot;</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>markerPosString</td>
+            <td>
+              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>
+            </td>
+            <td><p>the position where the marker is drawn</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+      <h4>Returns</h4>
+      <code><code>ol.Feature</code></code>
+      :
+      <span class='force-inline'>
+        <p>the created OpenLayers marker feature</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-mapapi/markerpopup'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-mapapi/markerpopup'>
+      <code>
+        markerPopup<span class='gray'>(markerFeat, popupText)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates a popup at the given feature's position</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>markerFeat</td>
+            <td>
+              <code>ol.Feature</code>
+            </td>
+            <td><p>the marker feature to bin the popup to</p>
+</td>
+          </tr>
+          <tr>
+            <td>popupText</td>
+            <td>
+              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>
+            </td>
+            <td><p>the text to be shown in the popup</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+
+
+
+
+
+
+</section>
+      </div>
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink'>
+      <code>
+        Shareloc.Permalink<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>A class representing the permalink functionality of Shareloc.</p>
+
+
+
+
+
+
+
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/createhash'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/createhash'>
+      <code>
+        createHash<span class='gray'>(map)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates the Shareloc URL hash representing the state of the given map. The
+following information is taken into account:</p>
+<ul>
+<li>center</li>
+<li>zoom level</li>
+<li>current base layer</li>
+</ul>
+<p>The has is returned in this form</p>
+<p><code>map=14/49.43451657605041/8.318049976895958&amp;layers=opentopomap</code></p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>map</td>
+            <td>
+              <code>ol.Map</code>
+            </td>
+            <td><p>the map to get the hash for</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the hash representing the map's state</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/createiframecode'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/createiframecode'>
+      <code>
+        createIframeCode<span class='gray'>(map)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates the Iframe code with the current Shareloc permalink
+(derived by <a href="createpermalinkurl"><code>#createPermalinkUrl</code></a> of the given map as source. The size
+of the Iframe defined by the current map size.</p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>map</td>
+            <td>
+              <code>ol.Map</code>
+            </td>
+            <td><p>the map to get the Iframe for</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the Iframe code representing the map</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/createpermalinkurl'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/createpermalinkurl'>
+      <code>
+        createPermalinkUrl<span class='gray'>(map)</span>
+      </code>
+    </a>
+  </h3>
+  <p>Creates the Shareloc permalink URL representing the state of the given map.
+The following information is taken into account:</p>
+<ul>
+<li>center</li>
+<li>zoom level</li>
+<li>current base layer</li>
+<li>marker position (optional)</li>
+<li>marker popup text</li>
+</ul>
+<p>The has is returned in this form</p>
+<p><code>http://myhost/share.html?zoom=14&amp;X=8.318049976895958&amp;Y=49.43451657605041&amp;bgLayer=opentopomap&amp;marker=49.43707328904662,8.306307792663572&amp;popupText=foo-popup-text</code></p>
+
+
+    <p>
+      <table class='table-light overflow-hidden bg-cloudy-light'>
+        <thead>
+          <th class='col-3'>parameter</th>
+          <th class='col-3'>type</th>
+          <th class='col-6'>description</th>
+        </thead>
+          <tr>
+            <td>map</td>
+            <td>
+              <code>ol.Map</code>
+            </td>
+            <td><p>the map to get the permalink for</p>
+</td>
+          </tr>
+      </table>
+    </p>
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the permalink representing the map's state</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/getfullhash'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/getfullhash'>
+      <code>
+        getFullHash<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Returns the hash string of the underlying location.</p>
+
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>the hash object</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/gethashobject'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/gethashobject'>
+      <code>
+        getHashObject<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Returns a object representation of the hash string, e. g.:</p>
+<pre><code>  {
+    zoom: &quot;2&quot;,
+    X: &quot;50.02345&quot;,
+    Y: &quot;8.161234&quot;,
+    bgLayer: &quot;osm.base&quot;
+  }</code></pre>
+
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>object holding the key-value-pairs of the hash</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/getparams'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/getparams'>
+      <code>
+        getParams<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Returns the URL parameters of the underlying location, e.g.:</p>
+<pre><code>  {
+    X: &quot;8.318049976895958&quot;,
+    Y: &quot;49.43451657605041&quot;,
+    zoom: &quot;14&quot;,
+    bgLayer: &quot;opentopomap&quot;,
+    marker: &quot;49.43707328904662,8.306307792663572&quot;,
+    popupText: &quot;foo-popup-text&quot;
+  }</code></pre>
+
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code></code>
+      :
+      <span class='force-inline'>
+        <p>object holding the key-value-pairs of the URL params</p>
+
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/shareloc-permalink/hashash'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/shareloc-permalink/hashash'>
+      <code>
+        hasHash<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>Checks if the underlying location contains a hash.</p>
+
+
+
+
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></code>
+      
+      <span class='force-inline'>
+        
+      </span>
+
+
+
+
+
+
+</section>
+      </div>
+
+
+</section>
+      </div>
+      <div class='section-indent'>
+<section id='shareloc/version'class='mt2 mb2 py1 px2 keyline-top'>
+  <h3 class='regular'>
+    <a class='black' href='#shareloc/version'>
+      <code>
+        VERSION<span class='gray'></span>
+      </code>
+    </a>
+  </h3>
+  <p>The current version of Shareloc</p>
+
+
+
+
+
+
+
+
+
+
+</section>
+      </div>
+
+
+
+</section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

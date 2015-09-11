@@ -1,0 +1,12 @@
+.bg-cloudy {
+    background: rgba(255, 7, 7, .2) none repeat scroll 0 0;
+}
+
+.mt2.mb2.py1.px2.keyline-top:first-child {
+  /*background-image: url(http://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png);
+  background-repeat: no-repeat;*/
+}
+
+.documentation a {
+  color: #E1070C;
+}
