@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         banner: '// <%= pkg.name %> (v<%= pkg.version %>) \n' +
-                '// License <%= pkg.licenses[0].type %>, <%= pkg.licenses[0].url %>  \n' +
+                '// License BSD, see <%= pkg.license %>  \n' +
                 '// Build on <%= grunt.template.today("yyyy-mm-dd") %> \n'
       },
       build: {
