@@ -59,7 +59,11 @@
   <h3 class='regular'>
     <a class='black' href='#'>
       <code>
-        <span class='gray'></span>
+        <span class='gray'><b>Shareloc</b> - the free and open map API based on OpenLayers</span>
+        <span class='gray' style="font-size: smaller;">(Version 0.9.0)</span>
+        <br/>
+        <br/>
+        <span class='gray' style="font-size: smaller;">Development and hosting by <a href="http://meggsimum.de">meggsimum</a></span>
       </code>
     </a>
   </h3>
@@ -211,9 +215,9 @@ by config as well as functions to add a marker and a popup to the map.</p>
 renders it to a DIV with the ID 'map' in the DOM.</p>
 <p>Configuration must be in the format:</p>
 <pre><code>  {
-    X: &quot;8.318049976895958&quot;,
-    Y: &quot;49.43451657605041&quot;,
-    zoom: &quot;14&quot;,
+    X: 8.318049976895958,
+    Y: 49.43451657605041,
+    zoom: 14,
     bgLayer: &quot;opentopomap&quot;,
     marker: &quot;49.43707328904662,8.306307792663572&quot;,
     popupText: &quot;foo-popup-text&quot;
@@ -569,11 +573,13 @@ The following information is taken into account:</p>
   </h3>
   <p>Returns a object representation of the hash string, e. g.:</p>
 <pre><code>  {
-    zoom: &quot;2&quot;,
-    X: &quot;50.02345&quot;,
-    Y: &quot;8.161234&quot;,
+    zoom: 2,
+    X: 50.02345,
+    Y: 8.161234,
     bgLayer: &quot;osm.base&quot;
-  }</code></pre>
+  }
+</code></pre>
+<p>The parameters 'X', 'Y' and 'zoom' are transformed to numbers.</p>
 
 
 
@@ -604,13 +610,16 @@ The following information is taken into account:</p>
   </h3>
   <p>Returns the URL parameters of the underlying location, e.g.:</p>
 <pre><code>  {
-    X: &quot;8.318049976895958&quot;,
-    Y: &quot;49.43451657605041&quot;,
-    zoom: &quot;14&quot;,
+    X: 8.318049976895958,
+    Y: 49.43451657605041,
+    zoom: 14,
     bgLayer: &quot;opentopomap&quot;,
     marker: &quot;49.43707328904662,8.306307792663572&quot;,
     popupText: &quot;foo-popup-text&quot;
-  }</code></pre>
+  }
+</code></pre>
+<p>The parameters 'X', 'Y' and 'zoom' are transformed to numbers, all
+others remain strings.</p>
 
 
 
