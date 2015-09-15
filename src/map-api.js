@@ -20,9 +20,9 @@ Shareloc.MapApi = function() {
  * Configuration must be in the format:
  *
  *       {
- *         X: "8.318049976895958",
- *         Y: "49.43451657605041",
- *         zoom: "14",
+ *         X: 8.318049976895958,
+ *         Y: 49.43451657605041,
+ *         zoom: 14,
  *         bgLayer: "opentopomap",
  *         marker: "49.43707328904662,8.306307792663572",
  *         popupText: "foo-popup-text"
@@ -46,8 +46,8 @@ Shareloc.MapApi.prototype.map = function(config) {
         ],
         view: new ol.View({
           // map will be recentered by extent on postrender
-          center: ol.proj.transform([parseFloat(params.X || 0), parseFloat(params.Y || 0)], 'EPSG:4326', 'EPSG:3857'),
-          zoom: parseInt(params.zoom || 2, 10)
+          center: ol.proj.transform([(params.X || 0), (params.Y || 0)], 'EPSG:4326', 'EPSG:3857'),
+          zoom: (params.zoom || 2)
         }),
         controls: ol.control.defaults({
             attributionOptions: ({

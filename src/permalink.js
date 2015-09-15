@@ -43,11 +43,13 @@ Shareloc.Permalink = function(loc) {
      * Returns a object representation of the hash string, e. g.:
      *
      *       {
-     *         zoom: "2",
-     *         X: "50.02345",
-     *         Y: "8.161234",
+     *         zoom: 2,
+     *         X: 50.02345,
+     *         Y: 8.161234,
      *         bgLayer: "osm.base"
      *       }
+     *
+     * The parameters 'X', 'Y' and 'zoom' are transformed to numbers.
      *
      * @return {Object} object holding the key-value-pairs of the hash
      * @memberof Shareloc.Permalink
@@ -57,9 +59,9 @@ Shareloc.Permalink = function(loc) {
         var fh = this.getFullHash();
         var fhParts = fh.split(/(.+)=(.+)\/(.+)\/(.+)&(.+)=(.+)/i);
         return {
-            zoom: fhParts[2],
-            X: fhParts[4],
-            Y: fhParts[3],
+            zoom: parseInt(fhParts[2], 10),
+            X: parseFloat(fhParts[4]),
+            Y: parseFloat(fhParts[3]),
             bgLayer: fhParts[6]
         };
     };
@@ -68,13 +70,16 @@ Shareloc.Permalink = function(loc) {
      * Returns the URL parameters of the underlying location, e.g.:
      *
      *       {
-     *         X: "8.318049976895958",
-     *         Y: "49.43451657605041",
-     *         zoom: "14",
+     *         X: 8.318049976895958,
+     *         Y: 49.43451657605041,
+     *         zoom: 14,
      *         bgLayer: "opentopomap",
      *         marker: "49.43707328904662,8.306307792663572",
      *         popupText: "foo-popup-text"
      *       }
+     *
+     * The parameters 'X', 'Y' and 'zoom' are transformed to numbers, all
+     * others remain strings.
      *
      * @return {Object} object holding the key-value-pairs of the URL params
      * @memberof Shareloc.Permalink
@@ -95,6 +100,15 @@ Shareloc.Permalink = function(loc) {
                urlParams[decode(match[1])] = decode(match[2]);
             /* jshint ignore:end */
             params = urlParams;
+        }
+        if(params.X) {
+           params.X = parseFloat(params.X);
+        }
+        if(params.Y) {
+            params.Y = parseFloat(params.Y);
+        }
+        if(params.zoom) {
+            params.zoom = parseInt(params.zoom, 10);
         }
         return params;
     };

@@ -15,11 +15,11 @@ Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3 ma
 var api = new Shareloc.MapApi();
 var params = {
     // lon of map center
-    X: "8.318049976895958",
+    X: 8.318049976895958,
     // lat of map center
-    Y: "49.43451657605041",
+    Y: 49.43451657605041,
     // initial map zoom level
-    zoom: "14",
+    zoom: 14,
     // layer
     bgLayer: "osm.base"
 };
