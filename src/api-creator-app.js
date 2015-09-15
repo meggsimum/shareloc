@@ -108,7 +108,7 @@ Shareloc.ApiCreatorApp = function(_map) {
                 });
                 map.addInteraction(drawMarker);
 
-            } else if($(this).attr('href') === '#code') {
+            } else {
                 map.removeInteraction(drawMarker);
             }
         });
