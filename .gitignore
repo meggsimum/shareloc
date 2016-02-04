@@ -1,0 +1,4 @@
+node_modules/
+build/
+/index.html
+/share.html
