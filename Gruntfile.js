@@ -15,9 +15,9 @@ module.exports = function(grunt) {
     },
     concat: {
       jsmain: {
-        src: ['lib/ol-3.9.0.js',
-              'lib/jquery.min-1.11.1.js',
-              'lib/bootstrap.min-3.2.0.js',
+        src: ['node_modules/openlayers/dist/ol.js',
+              'node_modules/jquery/dist/jquery.min.js',
+              'node_modules/bootstrap/dist/js/bootstrap.min.js',
               'src/shareloc.js',
               'src/layers.js',
               'src/map-api.js',
@@ -26,15 +26,15 @@ module.exports = function(grunt) {
         dest: 'build/src/<%= pkg.name %>-creator.js'
       },
       cssmain: {
-        src: ['lib/ol-3.9.0.css',
-              'lib/bootstrap.min-3.2.0.css',
+        src: ['node_modules/openlayers/dist/ol.css',
+              'node_modules/bootstrap/dist/css/bootstrap.min.css',
               'res/css/api-creator.css'],
         dest: 'build/res/css/<%= pkg.name %>-creator.css'
       },
       jsshare: {
-        src: ['lib/ol-3.9.0.js',
-              'lib/jquery.min-1.11.1.js',
-              'lib/bootstrap.min-3.2.0.js',
+        src: ['node_modules/openlayers/dist/ol.js',
+              'node_modules/jquery/dist/jquery.min.js',
+              'node_modules/bootstrap/dist/js/bootstrap.min.js',
               'src/shareloc.js',
               'src/layers.js',
               'src/map-api.js',
@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         dest: 'build/src/<%= pkg.name %>.js'
       },
       cssshare: {
-        src: ['lib/ol-3.9.0.css',
-              'lib/bootstrap.min-3.2.0.css',
+        src: ['node_modules/openlayers/dist/ol.css',
+              'node_modules/bootstrap/dist/css/bootstrap.min.css',
               'res/css/share.css'],
         dest: 'build/res/css/<%= pkg.name %>.css'
       }
