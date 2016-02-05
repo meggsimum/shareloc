@@ -18,8 +18,15 @@ body {
   margin-top: -50px;
 }
 
+.ol-attribution li {
+  font-size: 1.0rem;
+}
+
 @media screen and (max-width: 600px) {
     .ol-control.ol-zoom {
       display: none;
+    }
+    .ol-attribution li {
+      font-size: 10px;
     }
 }
