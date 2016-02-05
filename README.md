@@ -46,11 +46,12 @@ With Shareloc it is possible to create your OpenLayers 3 web map without any cod
 
 ### Development ###
 
-* Clone this repository
+* Fork and clone this repository
 * npm and grunt need to be installed on your system
-* ``npm install``
-* ``grunt`` (only once or in case you change the HTML templates under ``tpl/``)
-* Open ``index.html`` or ``share.html`` to see your changes
+* Run ``npm install`` on command line
+* Run ``grunt`` on command line
+* Open ``http://localhost:7000/`` or ``http://localhost:7000/share.html`` in
+your browser to see the development version of Shareloc
 
 ### Contributions welcome ###
 Any contribution is warmly welcome:

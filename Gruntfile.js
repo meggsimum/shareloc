@@ -114,6 +114,15 @@ module.exports = function(grunt) {
           dest: 'build/share.html'
         }]
       }
+    },
+    connect: {
+      server: {
+        options: {
+          hostname: '*',
+          port: 7000,
+          keepalive: true
+        }
+      }
     }
   });
 
@@ -123,9 +132,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'preprocess:dev']);
+  grunt.registerTask('default', ['jshint', 'preprocess:dev', 'connect:server']);
   grunt.registerTask('build', ['jshint', 'preprocess:dist', 'concat', 'uglify', 'copy:img', 'copy:conf']);
 
 };
