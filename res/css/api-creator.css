@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #map {
     height: 500px;
     width: 100%;
@@ -19,10 +24,9 @@ body {
     display: block;
     right: 0.5em;
     top: 0.5em;
-    width: 310px;
+    width: 355px;
     height: 200px;
     z-index: 2000;
-    overflow: : auto;
     background: white;
 }
 
@@ -31,15 +35,23 @@ body {
 }
 
 .panel-heading.shareloc-header {
-    background-image: url("../img/shareloc-logo-mini.png");
+    background-image: url("../img/shareloc-logo-white-mini.png");
     background-repeat: no-repeat;
     background-position: 4% 50%;
+}
+.shareloc-title {
+  font-family: 'Fjalla One';
+  font-size: 16px;
 }
 
 
 @media screen and (max-width: 600px) {
     #sidebar {
         display: none;
+        width: 95%;
+    }
+    .ol-control.ol-zoom {
+      display: none;
     }
 }
 

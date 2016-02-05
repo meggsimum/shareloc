@@ -15,6 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fjalla One">
+
     <!-- @if NODE_ENV='develop' -->
     <link rel="stylesheet" href="./node_modules/openlayers/dist/ol.css" type="text/css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -55,16 +57,16 @@
         </button>
         <div class="panel panel-primary">
             <div class="panel-heading primary shareloc-header">
-                <span class="badge title-badge">Shareloc</span>
+              <span class="shareloc-title" style="margin-left: 45px;">Shareloc</span>
             </div>
         </div>
 
         <!-- Tab definitions -->
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers</a></li>
-            <li><a href="#marker" class="tool-tab" data-toggle="tab">Location</a></li>
-            <li><a href="#code" class="tool-tab" data-toggle="tab">Share</a></li>
-            <li><a href="#info" class="tool-tab" data-toggle="tab">Info</a></li>
+            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers <span class="glyphicon glyphicon-align-justify"></span></a></li>
+            <li><a href="#marker" class="tool-tab" data-toggle="tab">Marker <span class="glyphicon glyphicon-map-marker"></a></li>
+            <li><a href="#code" class="tool-tab" data-toggle="tab">Share <span class="glyphicon glyphicon-share"></a></li>
+            <li><a href="#info" class="tool-tab" data-toggle="tab">Info <span class="glyphicon glyphicon-info-sign"></a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="layers">
@@ -96,7 +98,7 @@
             <div class="tab-pane" id="info">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <b>Shareloc</b> is a free map API to share <a href="http://openlayers.org/">OpenLayers 3</a> web maps.
+                  <span class="shareloc-title">Shareloc</span> is a free map API to share <a href="http://openlayers.org/">OpenLayers 3</a> web maps.
                   Development and hosting are done by <a href="http://meggsimum.de/">meggsimum</a>.
                   <br/>
                   <br/>
@@ -104,6 +106,9 @@
                   the offered layers.
                   Optionally you also can hint to a POI by a marker icon for example to show a
                   meeting point or your favorite bar.
+                  <br/>
+                  Shareloc is Open Source (BSD License). The code can be found
+                  <a href="https://github.com/meggsimum/shareloc" target="_blank">here</a>.
                   <h4>Credits</h4>
                   Thanks to all map providers, who grant free access to their maps:
                   <ul>

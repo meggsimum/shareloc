@@ -17,3 +17,9 @@ body {
   margin-left: 0px;
   margin-top: -50px;
 }
+
+@media screen and (max-width: 600px) {
+    .ol-control.ol-zoom {
+      display: none;
+    }
+}
