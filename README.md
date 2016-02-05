@@ -5,11 +5,16 @@ The free and open map API to create and share web maps based on
 
 Watch the online demo at http://apps.meggsimum.de/shareloc/
 
-At the moment there are a few free map layers based on open data included in the online demo. But it is easily possible to include your own layers (e. g. WMS) in your Shareloc instance.
+At the moment there are a few free map layers based on open data included in the
+online demo. But it is easily possible to include your own layers (e. g. WMS) in
+your Shareloc instance.
 
 ### Use by JavaScript API ###
 
-Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3 maps. Therefore you just have to include the Shareloc JavaScript lib into your HTML page. Now with a few lines of code it is possible to create a customized OpenLayers map.
+Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3
+maps. Therefore you just have to include the Shareloc JavaScript lib into your
+HTML page. Now with a few lines of code it is possible to create a customized
+OpenLayers map.
 
 ```javascript
 var api = new Shareloc.MapApi();
@@ -32,7 +37,11 @@ possibilities Shareloc offers.
 
 ### Use by web application ###
 
-With Shareloc it is possible to create your OpenLayers 3 web map without any coding. By a [web application](http://apps.meggsimum.de/shareloc/) you can configure your map view, add a marker to point at a special place and optionally add a text in a bubble to your marker. Afterward you can share your map by a simple link or embed the map in your own website.
+With Shareloc it is possible to create your OpenLayers 3 web map without any
+coding. By a [web application](http://apps.meggsimum.de/shareloc/) you can
+configure your map view, add a marker to point at a special place and optionally
+add a text in a bubble to your marker. Afterwards you can share your map by a
+simple link or embed the map in your own website.
 
 ### Build and deploy your own Shareloc instance ###
 
@@ -41,7 +50,8 @@ With Shareloc it is possible to create your OpenLayers 3 web map without any cod
 * ``npm install``
 * ``grunt build``
 * Copy the ``build`` folder to your webserver
-* Optonally you can edit the ``build/conf/layers.json`` file to add your own layers to Shareloc
+* Optonally you can edit the ``build/conf/layers.json`` file to add your own
+layers to Shareloc
 * That's it
 
 ### Development ###
@@ -52,9 +62,11 @@ With Shareloc it is possible to create your OpenLayers 3 web map without any cod
 * Run ``grunt`` on command line
 * Open ``http://localhost:7000/`` or ``http://localhost:7000/share.html`` in
 your browser to see the development version of Shareloc
+* In case you changed the HTML templates under ``tpl/`` please restart the server
+with the commands ``CTRL + C`` and ``grunt``
 
 ### Contributions welcome ###
-Any contribution is warmly welcome:
+Any kind of contribution is warmly welcome:
 
 * Documentation
 * Bug reporting
@@ -62,7 +74,8 @@ Any contribution is warmly welcome:
 * Code enhancements
 
 ### Credits ###
-Thanks to all map providers, who grant free access to their maps, which are used in the online demo:
+Thanks to all map providers, who grant free access to their maps, which are used
+in the online demo:
 
 * [OpenStreetMap](http://www.openstreetmap.org/)
 * [terrestris](http://terrestris.de/)
@@ -73,4 +86,4 @@ Thanks to all map providers, who grant free access to their maps, which are used
 ### Who do I talk to? ###
 You need more information or support? Please contact us at
 
-info__(at)__meggsimum__(dot)__de
+`info__(at)__meggsimum__(dot)__de`
