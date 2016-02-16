@@ -5,11 +5,23 @@ The free and open map API to create and share web maps based on
 
 Watch the online demo at http://apps.meggsimum.de/shareloc/
 
+![ScreenShot](https://cloud.githubusercontent.com/assets/1185547/13081828/8289f00a-d4ce-11e5-98c0-a1d08be49cb0.PNG)
+
 At the moment there are a few free map layers based on open data included in the
 online demo. But it is easily possible to include your own layers (e. g. WMS) in
-your Shareloc instance.
+your Shareloc instance (see section [Build and deploy your own Shareloc instance](https://github.com/meggsimum/shareloc#build-and-deploy-your-own-shareloc-instance)).
 
-### Use by JavaScript API ###
+### Create maps without coding via web application ###
+
+With Shareloc it is possible to create your OpenLayers 3 web map without any
+coding. With the [Shareloc web application](http://apps.meggsimum.de/shareloc/) you can
+  - configure your map view
+  - add a marker to point at a special place and
+  - optionally add a text in a bubble to your marker.
+
+Afterwards you can share your map by a simple link or embed the map in your own website.
+
+### Use Shareloc JavaScript API ###
 
 Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3
 maps. Therefore you just have to include the Shareloc JavaScript lib into your
@@ -34,14 +46,6 @@ var olMap = api.map(params);
 ```
 Check out the [API docs](http://meggsimum.github.io/shareloc/docs/) to see all
 possibilities Shareloc offers.
-
-### Use by web application ###
-
-With Shareloc it is possible to create your OpenLayers 3 web map without any
-coding. By a [web application](http://apps.meggsimum.de/shareloc/) you can
-configure your map view, add a marker to point at a special place and optionally
-add a text in a bubble to your marker. Afterwards you can share your map by a
-simple link or embed the map in your own website.
 
 ### Build and deploy your own Shareloc instance ###
 
