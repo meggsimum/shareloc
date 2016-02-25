@@ -126,6 +126,10 @@ Shareloc.ApiCreatorApp = function(_map) {
             $('#show-ui').css('display', 'none');
         });
 
+        $('#info-btn').click(function() {
+            $('#info-modal').modal('show');
+        });
+
         // show the location of the user
         var geolocation = new ol.Geolocation({
             // take the projection to use from the map's view

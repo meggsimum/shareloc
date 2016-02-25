@@ -43,6 +43,9 @@
         title="Shareloc by meggsimum - WebGIS and more" target="_blank">
         <img alt="www.meggsimim.de" src="./res/img/meggsimum.png">
     </a>
+    <button type="button" id="info-btn" class="btn btn-s btn-primary" title="Info and credits">
+        <span class="glyphicon glyphicon-info-sign"></span>
+    </button>
     <div id="show-ui">
       <button id="list-btn" type="button" class="btn btn-s btn-primary" title="Show the menu to create your Shareloc link">
           <span class="glyphicon glyphicon-th-list"></span>
@@ -66,7 +69,6 @@
             <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers <span class="glyphicon glyphicon-align-justify"></span></a></li>
             <li><a href="#marker" class="tool-tab" data-toggle="tab">Marker <span class="glyphicon glyphicon-map-marker"></a></li>
             <li><a href="#code" class="tool-tab" data-toggle="tab">Share <span class="glyphicon glyphicon-share"></a></li>
-            <li><a href="#info" class="tool-tab" data-toggle="tab">Info <span class="glyphicon glyphicon-info-sign"></a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="layers">
@@ -95,33 +97,56 @@
               </ul>
             </div>
 
-            <div class="tab-pane" id="info">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <span class="shareloc-title">Shareloc</span> is a free map API to share <a href="http://openlayers.org/">OpenLayers 3</a> web maps.
-                  Development and hosting are done by <a href="http://meggsimum.de/">meggsimum</a>.
-                  <br/>
-                  <br/>
-                  Defined by a link it is possible to share slippy maps showing your area of interest with one of
-                  the offered layers.
-                  Optionally you also can hint to a POI by a marker icon for example to show a
-                  meeting point or your favorite bar.
-                  <br/>
-                  Shareloc is Open Source (BSD License). The code can be found
-                  <a href="https://github.com/meggsimum/shareloc" target="_blank">here</a>.
-                  <h4>Credits</h4>
-                  Thanks to all map providers, who grant free access to their maps:
-                  <ul>
-                   <li><a href="http://www.openstreetmap.org/">OpenStreetMap</a></li>
-                   <li><a href="http://terrestris.de/">terrestris</a></li>
-                   <li><a href="http://www.mapquest.com/">MapQuest</a></li>
-                   <li><a href="http://opentopomap.org/">OpenTopoMap</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
         </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><span class="shareloc-title">Shareloc</span> - OpenLayers maps for all</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Info</h4>
+            Shareloc is a software to provide an easy-to-use map API in order to share
+            <a href="http://openlayers.org/">OpenLayers 3</a> web maps without coding.
+            <br/>
+            <br/>
+            With a few clicks you get an interactive web maps showing your area of interest with one of
+            the offered layers.
+            Optionally you can also hint to a Point of Interest by a marker icon for example to show a
+            meeting point or your office location.<br/>
+            Shareloc offers you a simple link to share your interactive webmap (e.g. by mail) or
+            gives you an HTML code snippet to embed your webmap into your own website.
+            <br/>
+            <br/>
+            You want your own Shareloc instance with your own map layers? So your layers are quickly accessible for e.g. customers?
+            No problem! Click
+            <a href="https://github.com/meggsimum/shareloc#build-and-deploy-your-own-shareloc-instance">here</a>
+            for more information.
+            <br/>
+            <br/>
+            Shareloc is made by: <br/><a href="http://meggsimum.de/"><img src="res/img/logo-meggsimum.png" alt="meggsimum logo" /></a>.
+            <br/>
+            <br/>
+            and it is Open Source (<a href="https://github.com/meggsimum/shareloc/blob/master/LICENSE">BSD License</a>). The code can be found
+            <a href="https://github.com/meggsimum/shareloc" target="_blank">here</a>.
+            <h4>Credits</h4>
+            Thanks to all map providers, who grant free access to their maps used in this demo:
+            <ul>
+             <li><a href="http://www.openstreetmap.org/">OpenStreetMap</a></li>
+             <li><a href="http://terrestris.de/">terrestris</a></li>
+             <li><a href="http://www.mapquest.com/">MapQuest</a></li>
+             <li><a href="http://opentopomap.org/">OpenTopoMap</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div style="display: none;">

@@ -51,8 +51,7 @@ Shareloc.MapApi.prototype.map = function(config) {
         }),
         controls: ol.control.defaults({
             attributionOptions: ({
-                collapsible: true,
-                label: '©'
+                collapsible: false
             })
         }),
         logo: false

@@ -24,9 +24,9 @@ h4 {
     display: block;
     right: 0.5em;
     top: 0.5em;
-    width: 355px;
+    width: 300px;
     height: 200px;
-    z-index: 2000;
+    z-index: 1000;
     background: white;
 }
 
@@ -84,12 +84,19 @@ h4 {
     padding: 5px;
 }
 
+#info-btn {
+    position: absolute;
+    right: 0.5em;
+    z-index: 1000;
+    bottom: 20px;
+}
+
 #show-ui {
     position: absolute;
     display: none;
     right: 0.5em;
     top: 0.5em;
-    z-index: 2500;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 600px) {
