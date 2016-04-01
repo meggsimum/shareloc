@@ -47,6 +47,9 @@ h4 {
 .ol-attribution li {
   font-size: 1.0rem;
 }
+.ol-attribution.ol-uncollapsible {
+  height: auto;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -88,7 +91,7 @@ h4 {
     position: absolute;
     right: 0.5em;
     z-index: 1000;
-    bottom: 20px;
+    bottom: 28px;
 }
 
 #show-ui {

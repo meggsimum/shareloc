@@ -21,6 +21,9 @@ body {
 .ol-attribution li {
   font-size: 1.0rem;
 }
+.ol-attribution.ol-uncollapsible {
+  height: auto;
+}
 
 @media screen and (max-width: 600px) {
     .ol-control.ol-zoom {
