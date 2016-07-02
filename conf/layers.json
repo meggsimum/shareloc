@@ -20,18 +20,6 @@
         "layer": "OSM-WMS",
         "attribution": "<a href='http://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
     },
-    "mapquest.road": {
-        "title": "MapQuest Road Layer",
-        "desc": "The MapQuest roads layer based on OSM data",
-        "type": "Mapquest",
-        "layer": "osm"
-    },
-    "mapquest.aerial": {
-        "title": "MapQuest Aerial Layer",
-        "desc": "The MapQuest aerial layer",
-        "type": "Mapquest",
-        "layer": "sat"
-    },
     "opentopomap": {
         "title": "OpenTopoMap",
         "desc": "The free topographic map based on OSM and SRTM data",
