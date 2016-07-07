@@ -83,7 +83,6 @@ in the online demo:
 
 * [OpenStreetMap](http://www.openstreetmap.org/)
 * [terrestris](http://terrestris.de/)
-* [MapQuest](http://www.mapquest.com/)
 * [OpenTopoMap](http://opentopomap.org/)
 
 
