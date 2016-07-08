@@ -10,6 +10,11 @@ body {
   bottom: .5em;
   left: .5em;
 }
+#cmpy-logo {
+  position: absolute;
+  left: 50px;
+  bottom: 0.5em;
+}
 .popover-content {
    min-width: 150px;
 }
