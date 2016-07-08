@@ -36,8 +36,6 @@ Shareloc.Layers.prototype.createLayerObject = function(id) {
             return this.createWms(conf, id);
         case 'OSM':
             return this.createOsm(conf, id);
-        case 'Mapquest':
-            return this.createMapquest(conf, id);
         case 'XYZ':
             return this.createXyz(conf, id);
         default:
@@ -81,21 +79,6 @@ Shareloc.Layers.prototype.createOsm = function(layerConf, lid) {
     return new ol.layer.Tile({
         lid: lid,
         source: new ol.source.OSM()
-    });
-};
-
-/**
- * Creates an OpenLayers MapQuest layer
- *
- * @param  {Object} layerConf layer configuration object
- * @param  {String} lid       unique layer ID
- * @return {ol.layer.Tile}    the layer object
- * @private
- */
-Shareloc.Layers.prototype.createMapquest = function(layerConf, lid) {
-    return new ol.layer.Tile({
-        lid: lid,
-        source: new ol.source.MapQuest({layer: layerConf.layer})
     });
 };
 
