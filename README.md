@@ -1,9 +1,9 @@
-# ![](http://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png) Shareloc #
+# ![](https://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png) Shareloc #
 
 The free and open map API to create and share web maps based on
-[OpenLayers 3](http://openlayers.org).
+[OpenLayers 3](https://openlayers.org).
 
-Watch the online demo at http://apps.meggsimum.de/shareloc/
+Watch the online demo at https://apps.meggsimum.de/shareloc/
 
 ![ScreenShot](https://cloud.githubusercontent.com/assets/1185547/13081828/8289f00a-d4ce-11e5-98c0-a1d08be49cb0.PNG)
 
@@ -14,7 +14,7 @@ your Shareloc instance (see section [Build and deploy your own Shareloc instance
 ### Create maps without coding via web application ###
 
 With Shareloc it is possible to create your OpenLayers 3 web map without any
-coding. With the [Shareloc web application](http://apps.meggsimum.de/shareloc/) you can
+coding. With the [Shareloc web application](https://apps.meggsimum.de/shareloc/) you can
   - configure your map view
   - add a marker to point at a special place and
   - optionally add a text in a bubble to your marker.
@@ -44,7 +44,7 @@ var params = {
 var olMap = api.map(params);
 
 ```
-Check out the [API docs](http://meggsimum.github.io/shareloc/docs/) to see all
+Check out the [API docs](https://meggsimum.github.io/shareloc/docs/) to see all
 possibilities Shareloc offers.
 
 ### Build and deploy your own Shareloc instance ###
@@ -81,9 +81,9 @@ Any kind of contribution is warmly welcome:
 Thanks to all map providers, who grant free access to their maps, which are used
 in the online demo:
 
-* [OpenStreetMap](http://www.openstreetmap.org/)
-* [terrestris](http://terrestris.de/)
-* [OpenTopoMap](http://opentopomap.org/)
+* [OpenStreetMap](https://www.openstreetmap.org/)
+* [terrestris](https://terrestris.de/)
+* [OpenTopoMap](https://opentopomap.org/)
 
 
 ### Who do I talk to? ###

@@ -8,17 +8,17 @@
         "title": "terrestris OSM WMS",
         "desc": "An OSM based WMS with custom style by terrestris GmbH & Co. KG",
         "type": "TileWMS",
-        "url": "http://ows.terrestris.de/osm/service",
+        "url": "https://ows.terrestris.de/osm/service",
         "layer": "OSM-WMS",
-        "attribution": "<a href='http://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='https://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
     },
     "terrestris.osm-wms-gray": {
         "title": "terrestris OSM WMS Gray",
         "desc": "An OSM based WMS with custom black and white style by terrestris GmbH & Co. KG",
         "type": "TileWMS",
-        "url": "http://ows.terrestris.de/osm-gray/service",
+        "url": "https://ows.terrestris.de/osm-gray/service",
         "layer": "OSM-WMS",
-        "attribution": "<a href='http://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='https://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
     },
     "opentopomap": {
         "title": "OpenTopoMap",
@@ -26,6 +26,6 @@
         "type": "XYZ",
         "url": "",
         "layer": "",
-        "attribution": "map design: &copy; <a href='http://opentopomap.org/'>OpenTopoMap</a> | map data: &copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap contributors</a>, <a href='http://srtm.usgs.gov/'>SRTM</a>"
+        "attribution": "map design: &copy; <a href='https://opentopomap.org/'>OpenTopoMap</a> | map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a>, <a href='http://srtm.usgs.gov/'>SRTM</a>"
     }
 }
