@@ -9,5 +9,5 @@
      * @type {String}
      * @default
      */
-    Shareloc.VERSION = "0.13.0";
+    Shareloc.VERSION = "0.13.1-dev";
 })();
