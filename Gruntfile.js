@@ -72,6 +72,16 @@ module.exports = function(grunt) {
           dest: 'build/res/img/'
         }]
       },
+      favIcon: {
+        files: [{
+          flatten: true,
+          expand: true,
+          src: [
+            'res/img/shareloc-logo-mini.png'
+          ],
+          dest: 'build/'
+        }]
+      },
       conf: {
         files: [{
           flatten: true,
