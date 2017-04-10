@@ -1,7 +1,7 @@
 # ![](https://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png) Shareloc #
 
 The free and open map API to create and share web maps based on
-[OpenLayers 3](https://openlayers.org).
+[OpenLayers](https://openlayers.org).
 
 Watch the online demo at https://apps.meggsimum.de/shareloc/
 
@@ -13,7 +13,7 @@ your Shareloc instance (see section [Build and deploy your own Shareloc instance
 
 ### Create maps without coding via web application ###
 
-With Shareloc it is possible to create your OpenLayers 3 web map without any
+With Shareloc it is possible to create your OpenLayers web map without any
 coding. With the [Shareloc web application](https://apps.meggsimum.de/shareloc/) you can
   - configure your map view
   - add a marker to point at a special place and
@@ -23,7 +23,7 @@ Afterwards you can share your map by a simple link or embed the map in your own 
 
 ### Use Shareloc JavaScript API ###
 
-Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3
+Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers
 maps. Therefore you just have to include the Shareloc JavaScript lib into your
 HTML page. Now with a few lines of code it is possible to create a customized
 OpenLayers map.
