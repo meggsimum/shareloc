@@ -1,7 +1,7 @@
 {
   "name": "Shareloc",
   "version": "0.12.1-dev",
-  "description": "Shareloc - the free and open map API based on OpenLayers 3.",
+  "description": "Shareloc - the free and open map API based on OpenLayers.",
   "repository": "https://github.com/meggsimum/shareloc.git",
   "license": "https://github.com/meggsimum/shareloc/blob/master/LICENSE",
   "readme": "README.md",
@@ -15,6 +15,6 @@
     "grunt-contrib-connect": "^0.11.2",
     "bootstrap": "3.3.6",
     "jquery": "1.12.0",
-    "openlayers": "3.17.1"
+    "openlayers": "4.0.1"
   }
 }
