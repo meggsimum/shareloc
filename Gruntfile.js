@@ -146,6 +146,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'preprocess:dev', 'connect:server']);
-  grunt.registerTask('build', ['jshint', 'preprocess:dist', 'concat', 'uglify', 'copy:img', 'copy:conf']);
+  grunt.registerTask('build', ['jshint', 'preprocess:dist', 'concat', 'uglify', 'copy:img', 'copy:favIcon', 'copy:conf']);
 
 };
