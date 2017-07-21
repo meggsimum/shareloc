@@ -135,6 +135,7 @@ Shareloc.ApiCreatorApp = function(_map) {
             // take the projection to use from the map's view
             projection: map.getView().getProjection()
         });
+        // listen to changes in position
         var geolocOverlay;
         $('#geolocation-btn').click(function() {
             if(geolocation.getTracking() === true) {
@@ -164,7 +165,14 @@ Shareloc.ApiCreatorApp = function(_map) {
                 })
             });
             map.addLayer(geolocOverlay);
-            map.getView().setCenter(pos);
+            map.getView().fit(accuracyFeature.getGeometry());
+        });
+        // deactivate geoloaction tracking when error occurs
+        geolocation.on('error', function(evt) {
+            $('#geolocation-btn').removeClass("btn-success");
+            geolocation.setTracking(false);
+            map.removeLayer(geolocOverlay);
+            alert('Positioning not possible ' + evt.message);
         });
 
         updatePermalinks();
