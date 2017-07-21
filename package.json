@@ -15,6 +15,6 @@
     "grunt-contrib-connect": "^0.11.2",
     "bootstrap": "3.3.6",
     "jquery": "1.12.0",
-    "openlayers": "4.0.1"
+    "openlayers": "4.2.0"
   }
 }
