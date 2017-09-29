@@ -82,6 +82,7 @@ Thanks to all map providers, who grant free access to their maps, which are used
 in the online demo:
 
 * [OpenStreetMap](https://www.openstreetmap.org/)
+* [Bundesamt für Kartographie und Geodäsie](http://www.bkg.bund.de/)
 * [terrestris](https://terrestris.de/)
 * [OpenTopoMap](https://opentopomap.org/)
 
