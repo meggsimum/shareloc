@@ -1,6 +1,6 @@
 {
   "name": "Shareloc",
-  "version": "0.14.1-dev",
+  "version": "0.15.0",
   "description": "Shareloc - the free and open map API based on OpenLayers.",
   "repository": "https://github.com/meggsimum/shareloc.git",
   "license": "https://github.com/meggsimum/shareloc/blob/master/LICENSE",
