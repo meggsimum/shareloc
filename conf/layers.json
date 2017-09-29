@@ -4,6 +4,14 @@
         "desc": "The standard OSM base layer",
         "type": "OSM"
     },
+    "bkg.topplus-web-open": {
+        "title": "TopPlus-Web-Open",
+        "desc": "Open map service by 'Bundesamt für Kartographie und Geodäsie' (Federal Office of Cartography and Geodesy of Germany) <br> <i>Lower zoom levels only available for central Europe</i>",
+        "type": "TileWMS",
+        "url": "http://sg.geodatenzentrum.de/wms_topplus_web_open",
+        "layer": "web",
+        "attribution": "<a href='http://www.bkg.bund.de/'>Bundesamt für Kartographie und Geodäsie</a> 2017, <a href='http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf'>map data</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+    },
     "terrestris.osm-wms": {
         "title": "terrestris OSM WMS",
         "desc": "An OSM based WMS with custom style by terrestris GmbH & Co. KG",
