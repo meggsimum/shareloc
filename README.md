@@ -5,7 +5,7 @@ The free and open map API to create and share web maps based on
 
 Watch the online demo at https://apps.meggsimum.de/shareloc/
 
-![ScreenShot](https://cloud.githubusercontent.com/assets/1185547/13081828/8289f00a-d4ce-11e5-98c0-a1d08be49cb0.PNG)
+![ScreenShot](https://user-images.githubusercontent.com/1185547/31016859-c1c22290-a526-11e7-8996-9257ec8477ed.png)
 
 At the moment there are a few free map layers based on open data included in the
 online demo. But it is easily possible to include your own layers (e. g. WMS) in
