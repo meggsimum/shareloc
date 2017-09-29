@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -48,11 +49,20 @@ h4 {
   z-index: 1049;
 }
 
+/* OL attribution control */
 .ol-attribution li {
   font-size: 1.0rem;
 }
 .ol-attribution.ol-uncollapsible {
   height: auto;
+}
+
+/* OL zoom controls */
+.ol-control button {
+    background-color: #980606;
+}
+.ol-control button:hover {
+    background-color: #aa0606;
 }
 
 

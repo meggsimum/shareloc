@@ -28,6 +28,7 @@ module.exports = function(grunt) {
       cssmain: {
         src: ['node_modules/openlayers/dist/ol.css',
               'node_modules/bootstrap/dist/css/bootstrap.min.css',
+              'res/css/bootstrap-override.css',
               'res/css/api-creator.css'],
         dest: 'build/res/css/<%= pkg.name %>-creator.css'
       },
@@ -44,7 +45,8 @@ module.exports = function(grunt) {
       cssshare: {
         src: ['node_modules/openlayers/dist/ol.css',
               'node_modules/bootstrap/dist/css/bootstrap.min.css',
-              'res/css/share.css'],
+              'res/css/share.css'
+        ],
         dest: 'build/res/css/<%= pkg.name %>.css'
       }
     },

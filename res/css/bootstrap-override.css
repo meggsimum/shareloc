@@ -1,0 +1,140 @@
+
+a {
+  color: #980606;
+}
+a:hover,
+a:focus {
+  color: #aa0606;
+  text-decoration: underline;
+}
+
+.text-primary {
+  color: #980606;
+}
+
+.bg-primary {
+  background-color: #980606;
+}
+
+.btn-primary {
+  background-color: #980606;
+  border-color: #aa0606;
+  /*border-color: #2e6da4;*/
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #980606;
+  border-color: #122b40;
+}
+.btn-primary:hover {
+  background-color: #980606;
+  border-color: #980606;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #980606;
+  border-color: #aa0606;
+  /*border-color: #2e6da4;*/
+}
+
+.btn-primary .badge {
+  color: #980606;
+}
+
+.btn-link {
+  color: #980606;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #aa0606;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #980606;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border-color: #980606;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #980606;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #980606;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #aa0606;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #980606;
+  border-color: #980606;
+}
+
+.label-primary {
+  background-color: #980606;
+}
+
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: #980606;
+}
+
+a.thumbnail.active {
+  border-color: #980606;
+}
+
+.progress-bar {
+  background-color: #980606;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #980606;
+  border-color: #980606;
+}
+
+.panel-primary {
+  border-color: #980606;
+}
+
+.panel-primary > .panel-heading {
+  background-color: #980606;
+  border-color: #980606;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #980606;
+}
+.panel-primary > .panel-heading .badge {
+  color: #980606;
+}
+
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #980606;
+}
