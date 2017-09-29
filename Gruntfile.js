@@ -79,7 +79,16 @@ module.exports = function(grunt) {
           flatten: true,
           expand: true,
           src: [
-            'res/img/shareloc-logo-mini.png'
+            'res/favicon/android-chrome-192x192.png',
+            'res/favicon/android-chrome-512x512.png',
+            'res/favicon/apple-touch-icon.png',
+            'res/favicon/browserconfig.xml',
+            'res/favicon/favicon-16x16.png',
+            'res/favicon/favicon-32x32.png',
+            'res/favicon/favicon.png',
+            'res/favicon/manifest.json',
+            'res/favicon/mstile-150x150.png',
+            'res/favicon/safari-pinned-tab.svg'
           ],
           dest: 'build/'
         }]
