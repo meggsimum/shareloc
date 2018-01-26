@@ -3,7 +3,7 @@
   "version": "0.15.1-dev",
   "description": "Shareloc - the free and open map API based on OpenLayers.",
   "repository": "https://github.com/meggsimum/shareloc.git",
-  "license": "https://github.com/meggsimum/shareloc/blob/master/LICENSE",
+  "license" : "SEE LICENSE IN https://github.com/meggsimum/shareloc/blob/master/LICENSE",
   "readme": "README.md",
   "devDependencies": {
     "grunt": "^0.4.5",
