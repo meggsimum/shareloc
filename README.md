@@ -3,6 +3,8 @@
 The free and open map API to create and share web maps based on
 [OpenLayers](https://openlayers.org).
 
+[![license: 3-Clause BSD](https://img.shields.io/badge/license-3--Clause%20BSD-brightgreen.svg)](https://github.com/meggsimum/shareloc/blob/master/LICENSE)
+
 Watch the online demo at https://apps.meggsimum.de/shareloc/
 
 ![ScreenShot](https://user-images.githubusercontent.com/1185547/31016859-c1c22290-a526-11e7-8996-9257ec8477ed.png)
