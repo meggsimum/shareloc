@@ -1,12 +1,12 @@
 {
     "osm.base": {
         "title": "OpenStreetMap Standard Layer",
-        "desc": "The standard OSM base layer",
+        "desc": "OSM Standardkarte",
         "type": "OSM"
     },
     "bkg.topplus-web-open": {
         "title": "TopPlus-Web-Open",
-        "desc": "Open map service by 'Bundesamt für Kartographie und Geodäsie' (Federal Office of Cartography and Geodesy of Germany) <br> <i>Lower zoom levels only available for central Europe</i>",
+        "desc": "Freier Kartendienst des Bundesamt für Kartographie und Geodäsie <br> <i>Untere Zoomstufen nur für Mitteleuropa verfügbar.</i>",
         "type": "TileWMS",
         "url": "http://sg.geodatenzentrum.de/wms_topplus_web_open",
         "layer": "web",
@@ -14,7 +14,7 @@
     },
     "terrestris.osm-wms": {
         "title": "terrestris OSM WMS",
-        "desc": "An OSM based WMS with custom style by terrestris GmbH & Co. KG",
+        "desc": "OSM-basierter WMS mit eigener Kartographie von terrestris GmbH & Co. KG",
         "type": "TileWMS",
         "url": "https://ows.terrestris.de/osm/service",
         "layer": "OSM-WMS",
@@ -22,7 +22,7 @@
     },
     "terrestris.osm-wms-gray": {
         "title": "terrestris OSM WMS Gray",
-        "desc": "An OSM based WMS with custom black and white style by terrestris GmbH & Co. KG",
+        "desc": "OSM-basierter WMS mit eigener schwarz-weiß Kartographie von terrestris GmbH & Co. KG",
         "type": "TileWMS",
         "url": "https://ows.terrestris.de/osm-gray/service",
         "layer": "OSM-WMS",
@@ -30,7 +30,7 @@
     },
     "opentopomap": {
         "title": "OpenTopoMap",
-        "desc": "The free topographic map based on OSM and SRTM data",
+        "desc": "Freie topographische Karte basierend auf OSM und SRTM Daten",
         "type": "XYZ",
         "url": "",
         "layer": "",

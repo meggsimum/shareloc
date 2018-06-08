@@ -56,7 +56,7 @@
     <div id="map">
     </div>
     <a id="app-logo" href="https://www.meggsimum.de/"
-        title="Shareloc by meggsimum - WebGIS and more" target="_blank">
+        title="Shareloc by meggsimum - Büro für Geoinformatik" target="_blank">
         <img alt="www.meggsimim.de" src="./res/img/meggsimum.png">
     </a>
     <button type="button" id="info-btn" class="btn btn-s btn-primary" title="Info and credits">
@@ -82,9 +82,9 @@
 
         <!-- Tab definitions -->
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers <span class="glyphicon glyphicon-align-justify"></span></a></li>
+            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layer <span class="glyphicon glyphicon-align-justify"></span></a></li>
             <li><a href="#marker" class="tool-tab" data-toggle="tab">Marker <span class="glyphicon glyphicon-map-marker"></a></li>
-            <li><a href="#code" class="tool-tab" data-toggle="tab">Share <span class="glyphicon glyphicon-share"></a></li>
+            <li><a href="#code" class="tool-tab" data-toggle="tab">Teilen <span class="glyphicon glyphicon-share"></a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="layers">
@@ -93,10 +93,10 @@
             <div class="tab-pane" id="marker">
                <ul class="list-group">
                 <li class="list-group-item">
-                    Set a marker by clicking on the map.
+                    Marker durch Klick auf die Karte setzen.
                     <p id="marker-x"></p>
                     <p id="marker-y"></p>
-                    <textarea id="popuptext" class="form-control" rows="3" placeholder="Add text for your marker here..."></textarea>
+                    <textarea id="popuptext" class="form-control" rows="3" placeholder="Text für Marker hier platzieren..."></textarea>
                 </li>
               </ul>
             </div>
@@ -124,39 +124,39 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><span class="shareloc-title">Shareloc</span> - OpenLayers maps for all</h4>
+            <h4 class="modal-title"><span class="shareloc-title">Shareloc</span> - OpenLayers Karten für alle</h4>
           </div>
           <div class="modal-body">
             <h4>Info</h4>
-            Shareloc is a software to provide an easy-to-use map API in order to share
-            OpenLayers web maps without coding.
+            Shareloc stellt eine Webkarten-API mit Kartendiensten des Landes Rheinland-Pfalz zur Verfügung und ist
+            mit der Software Shareloc realisiert.
+            Shareloc ist eine einfach zu nutzende Karten-API, um OpenLayers basierte Webkarten zu erstellen und zu teilen -
+            ohne programmieren zu müssen!
             <br/>
             <br/>
-            With a few clicks you get an interactive web map showing your area of interest with one of
-            the offered layers.
-            Optionally you can also hint to a Point of Interest by a marker icon for example to show a
-            meeting point or your office location.<br/>
-            Shareloc offers you a simple link to share your interactive web map (e.g. by mail) or
-            gives you an HTML code snippet to embed your web map into your own website.
+            Mit wenigen Klicks können Sie sich ihre eigene Webkarte mit einem der angebotenen Kartenthemen erstellen.
+            Weiterhin können Sie einen speziellen Punkt in der Karte, z.B. Ihr Firmenstandort oder einen Treffpunkt, mit
+            einem Markersymbol hervorheben.
+            Shareloc stellt Ihnen einen einfachen Link zu Ihrer individuellen Webkarte bereit, so dass Sie dies ganz einfach
+            teilen können, z.B. per EMail. Weiterhin stellt Shareloc auch HTML-Code bereit, den Sie nutzen können, um Ihre Webkarte
+            in Ihre eigene Webseite einzubetten.
             <br/>
             <br/>
-            You want your own Shareloc instance with your own map layers? So
-            your layers are quickly accessible e.g. for your customers or your own employees?
-            No problem! Click
-            <a href="https://github.com/meggsimum/shareloc#build-and-deploy-your-own-shareloc-instance">here</a>
-            for more information.
+            Sie möchten Ihre eigene Shareloc-Instanz mit Ihren eigenen Kartendiensten? So dass Ihre Dienste schnell in Webkarten
+            einsetzbar sind, beispielweise für Ihre Mitarbeiter oder Kunden? Kein Problem! Klicken Sie <a href="https://github.com/meggsimum/shareloc#build-and-deploy-your-own-shareloc-instance">hier</a>
+            für weitere Informationen.
             <br/>
             <br/>
-            Shareloc is made by: <br/><a href="https://meggsimum.de/"><img src="res/img/logo-meggsimum.png" alt="meggsimum logo" /></a>.
+            Shareloc wird entwickelt und bereitgestellt von: <br/><a href="https://meggsimum.de/"><img src="res/img/logo-meggsimum.png" alt="meggsimum logo" /></a>.
             <br/>
             <br/>
-            and it is Open Source (<a href="https://github.com/meggsimum/shareloc/blob/master/LICENSE">3-Clause BSD License</a>). The code can be found
-            <a href="https://github.com/meggsimum/shareloc" target="_blank">here</a>.
+            und ist Open Source (<a href="https://github.com/meggsimum/shareloc/blob/master/LICENSE">3-Clause BSD License</a>).
+            Der Code ist <a href="https://github.com/meggsimum/shareloc">hier</a> verfügbar.
             <h4>Credits</h4>
-            Thanks to the devs of the great
-            <a href="https://openlayers.org/">OpenLayers</a> mapping library.
+            Vielen Dank an die Entwickler der großartigen Mapping-Bibliothek
+            <a href="https://openlayers.org/">OpenLayers</a>.
             <br>
-            Thanks to all map providers, who grant free access to their maps used in this demo:
+            Danke an alle, die freien Zugang zu Kartendiensten in dieser Demo gewähren:
             <ul>
              <li><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></li>
              <li><a href="https://www.bkg.bund.de/" target="_blank">Bundesamt für Kartographie und Geodäsie</a></li>
@@ -164,8 +164,8 @@
              <li><a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a></li>
             </ul>
             <p style="margin-top: 20px">
-                <a href="https://meggsimum.de/impressum/" title="Donate">Imprint</a> |
-                <a href="https://meggsimum.de/datenschutzerklaerung/" title="Donate">Declaration of Data Privacy</a>
+                <a href="https://meggsimum.de/impressum/" title="Donate">Impressum</a> |
+                <a href="https://meggsimum.de/datenschutzerklaerung/" title="Donate">Datenschutzerklärung</a>
             </p>
           </div>
         </div>
