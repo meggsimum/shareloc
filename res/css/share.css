@@ -7,14 +7,28 @@ body {
 }
 #app-logo {
   position: absolute;
-  bottom: .5em;
   left: .5em;
+  bottom: 1.5em;
 }
 #cmpy-logo {
   position: absolute;
   left: 50px;
-  bottom: 0.5em;
+  bottom: 1.5em;
 }
+
+.legal-stuff {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.0rem;
+  background-color: white;
+  border-radius: 4px 0 0;
+  padding: 2px;
+}
+.legal-stuff a {
+  color: #980606;
+}
+
 .popover-content {
    min-width: 150px;
 }
@@ -49,4 +63,9 @@ body {
     .ol-attribution li {
       font-size: 10px;
     }
+}
+@media screen and (max-width: 375px) {
+  .ol-attribution ul {
+    max-width: 205px;
+  }
 }
