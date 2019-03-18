@@ -10,7 +10,7 @@
         "type": "TileWMS",
         "url": "http://sg.geodatenzentrum.de/wms_topplus_web_open",
         "layer": "web",
-        "attribution": "<a href='http://www.bkg.bund.de/'>Bundesamt für Kartographie und Geodäsie</a> 2017, <a href='http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf'>map data</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='http://www.bkg.bund.de/'>Bundesamt für Kartographie und Geodäsie</a> 2019, <a href='http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf'>Datenquellen</a>"
     },
     "terrestris.osm-wms": {
         "title": "terrestris OSM WMS",
@@ -18,7 +18,7 @@
         "type": "TileWMS",
         "url": "https://ows.terrestris.de/osm/service",
         "layer": "OSM-WMS",
-        "attribution": "<a href='https://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='https://www.terrestris.de/'>terrestris</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
     },
     "terrestris.osm-wms-gray": {
         "title": "terrestris OSM WMS Gray",
@@ -26,7 +26,7 @@
         "type": "TileWMS",
         "url": "https://ows.terrestris.de/osm-gray/service",
         "layer": "OSM-WMS",
-        "attribution": "<a href='https://www.terrestris.de/'>terrestris GmbH & Co. KG</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='https://www.terrestris.de/'>terrestris</a>, map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
     },
     "opentopomap": {
         "title": "OpenTopoMap",
@@ -34,6 +34,6 @@
         "type": "XYZ",
         "url": "",
         "layer": "",
-        "attribution": "map design: &copy; <a href='https://opentopomap.org/'>OpenTopoMap</a> | map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a>, <a href='http://srtm.usgs.gov/'>SRTM</a>"
+        "attribution": "Map: &copy; <a href='https://opentopomap.org/'>OpenTopoMap</a> | map data: &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap contributors</a>, <a href='http://srtm.usgs.gov/'>SRTM</a>"
     }
 }
