@@ -10,7 +10,7 @@
         "type": "TileWMS",
         "url": "http://sg.geodatenzentrum.de/wms_topplus_web_open",
         "layer": "web",
-        "attribution": "<a href='http://www.bkg.bund.de/'>Bundesamt für Kartographie und Geodäsie</a> 2017, <a href='http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf'>map data</a> <a href='http://www.openstreetmap.org/copyright'>(ODbL)</a>"
+        "attribution": "<a href='http://www.bkg.bund.de/'>Bundesamt für Kartographie und Geodäsie</a> 2019, <a href='http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf'>Datenquellen</a>"
     },
     "terrestris.osm-wms": {
         "title": "terrestris OSM WMS",
